@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaza: A Digital Memorial & Report</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <h1 class="loader-text" data-i18n="loader">Witness</h1>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">MEMORIAL <span class="dot">.</span></a>
+            
+            <button id="lang-toggle" class="lang-btn">EN | EL</button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="bi bi-list text-white"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#context" data-i18n="nav_context">Context</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline" data-i18n="nav_timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#map" data-i18n="nav_map">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comparison" data-i18n="nav_destruction">Destruction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#impact" data-i18n="nav_impact">Human Cost</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#locations" data-i18n="nav_evidence">Evidence</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#onelife" data-i18n="nav_onelife">One Life</a></li>
+                    <li class="nav-item"><a class="nav-link btn-donate" href="#support" data-i18n="nav_support">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-bg" id="hero-bg"></div>
+        <div class="hero-grid-overlay"></div> 
+        
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="hero-content text-center reveal-load">
+                <p class="overline" data-i18n="hero_overline">Investigative Documentary</p>
+                <h1 class="display-1 hero-title" data-i18n="hero_title">The Genocide in Gaza</h1>
+                <p class="lead hero-subtitle" data-i18n="hero_subtitle">A digital record of loss, endurance, and the humanitarian crisis.</p>
+                <div class="scroll-indicator">
+                    <span data-i18n="hero_scroll">Scroll to Witness</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="context" class="section-padding bg-darker">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 reveal">
+                    <h2 class="section-title text-center mb-5" data-i18n="context_title">The Context</h2>
+                    
+                    <p class="article-text" data-i18n="context_p1">
+                        In a densely populated strip of land, a humanitarian catastrophe has unfolded. This platform serves as a digital archive to document the events, the human cost, and the irreversible changes to the landscape. We present verified data and visual evidence to foster global awareness.
+                    </p>
+
+                    <blockquote class="pull-quote" data-i18n="context_quote">
+                        "The scale of infrastructure destruction in this period is unprecedented in recent history."
+                    </blockquote>
+
+                    <p class="article-text" data-i18n="context_p2">
+                        Beyond the statistics lie entire neighborhoods erased and a history under threat. What follows is a chronological and geospatial account of the events.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 reveal" data-i18n="timeline_title">Chronology of Events</h2>
+            <div class="timeline-container">
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="date" data-i18n="date_oct7">October 7, 2023</span>
+                        <h3 data-i18n="tl_1_title">The Escalation</h3>
+                        <p data-i18n="tl_1_text">Initial outbreaks of violence and the commencement of heavy aerial bombardment. Infrastructure damage begins targeting northern districts.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="date" data-i18n="date_oct13">October 13, 2023</span>
+                        <h3 data-i18n="tl_2_title">The Displacement Order</h3>
+                        <p data-i18n="tl_2_text">1.1 million residents in North Gaza are ordered to evacuate south within 24 hours. This marks the beginning of the mass internal displacement crisis.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="date" data-i18n="date_oct27">October 27, 2023</span>
+                        <h3 data-i18n="tl_3_title">The Ground Invasion</h3>
+                        <p data-i18n="tl_3_text">Israeli ground forces enter Gaza. A near-total communications blackout isolates the strip as the siege intensifies in the north.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="date" data-i18n="date_dec1">December 1, 2023</span>
+                        <h3 data-i18n="tl_4_title">Expansion to the South</h3>
+                        <p data-i18n="tl_4_text">Following a brief ceasefire, ground operations expand into Khan Younis. The "safe zone" shrinks, trapping civilians in an increasingly small area.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="date" data-i18n="date_may6">May 6, 2024</span>
+                        <h3 data-i18n="tl_5_title">The Rafah Offensive</h3>
+                        <p data-i18n="tl_5_text">Ground forces advance into Rafah, the last refuge for over a million displaced people. The seizure of the border crossing halts critical aid flow.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="section-padding bg-darker">
+        <div class="container">
+            <div class="row justify-content-center mb-5 reveal">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title" data-i18n="map_title">Zones of Displacement</h2>
+                    <p class="article-text" data-i18n="map_subtitle">Geospatial analysis of evacuation corridors and safe zones.</p>
+                </div>
+            </div>
+            
+            <div class="map-wrapper reveal">
+                <div class="map-frame">
+                    <img src="map-displacement.jpg" alt="Map of Gaza Displacement Zones" class="img-fluid w-100" style="opacity: 0.9;">
+                    
+                    <div class="map-overlay-info top-right">
+                        <span><i class="bi bi-circle-fill" style="color: #d9534f;"></i> <span data-i18n="map_legend_1">Evacuation Zone</span></span>
+                        <span><i class="bi bi-triangle-fill" style="color: #f0ad4e;"></i> <span data-i18n="map_legend_2">Shelter Cluster</span></span>
+                    </div>
+                </div>
+                <p class="small text-center mt-3" data-i18n="map_source">Map data source: UN OCHA & Field Reports (2024)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison" class="section-padding">
+        <div class="container">
+            <div class="row mb-5 reveal">
+                <div class="col-lg-6">
+                    <h2 class="section-title" data-i18n="comp_title">Erasure of Landscape</h2>
+                    <p class="article-text" data-i18n="comp_subtitle">Satellite imagery analysis showing the scale of destruction across multiple neighborhoods. Use the arrows to navigate locations.</p>
+                </div>
+            </div>
+            
+            <div id="comparisonCarousel" class="carousel slide comparison-gallery-wrapper reveal" data-bs-interval="false">
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="gallery-frame mb-4">
+                            <img class="img-fluid w-100 comparison-image" 
+                                 src="Beit Hanounbefore.jpg" 
+                                 data-before="Beit Hanounbefore.jpg"
+                                 data-after="Beit Hanounafter.jpg"
+                                 alt="Beit Hanoun">
+                        </div>
+                        <div class="gallery-caption text-center">
+                            <h4 class="location-title" data-i18n="loc_beit">Beit Hanoun, North Gaza</h4>
+                            <button class="btn btn-outline-light action-btn comparison-toggle-btn mt-3" data-i18n="btn_reveal">Reveal Aftermath</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="gallery-frame mb-4">
+                            <img class="img-fluid w-100 comparison-image" 
+                                 src="Gaza_CityCenter.jpg" 
+                                 data-before="Gaza_CityCenter.jpg"
+                                 data-after="Gaza_Citycenterafter.jpg"
+                                 alt="Gaza City">
+                        </div>
+                        <div class="gallery-caption text-center">
+                            <h4 class="location-title" data-i18n="loc_gaza">Gaza City Center</h4>
+                            <button class="btn btn-outline-light action-btn comparison-toggle-btn mt-3" data-i18n="btn_reveal">Reveal Aftermath</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="gallery-frame mb-4">
+                            <img class="img-fluid w-100 comparison-image" 
+                                 src="Khan_Yunis_before.jpg" 
+                                 data-before="Khan_Yunis_before.jpg"
+                                 data-after="Khan_Yunis_after.jpg"
+                                 alt="Khan Younis">
+                        </div>
+                        <div class="gallery-caption text-center">
+                            <h4 class="location-title" data-i18n="loc_khan">Khan Younis</h4>
+                            <button class="btn btn-outline-light action-btn comparison-toggle-btn mt-3" data-i18n="btn_reveal">Reveal Aftermath</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#comparisonCarousel" data-bs-slide="prev">
+                    <i class="bi bi-chevron-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#comparisonCarousel" data-bs-slide="next">
+                    <i class="bi bi-chevron-right"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+                <div class="carousel-indicators custom-indicators">
+                    <button type="button" data-bs-target="#comparisonCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#comparisonCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#comparisonCarousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="section-padding bg-darker">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5 reveal">
+                    <h2 class="section-title" data-i18n="impact_title">The Human Cost</h2>
+                    <p class="article-text" data-i18n="impact_subtitle">Verified data aggregated from international health organizations.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4 reveal">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="34000">0</h3>
+                        <p><span data-i18n="stat_1">Estimated Lives Lost</span> <span class="citation" data-tooltip="Source: UN OCHA & Ministry of Health Data (Oct 23 - Jan 24)">1</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 reveal">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="19000">0</h3>
+                        <p><span data-i18n="stat_2">Children Widowed/Orphaned</span> <span class="citation" data-tooltip="Source: UNICEF State of Palestine Reports">2</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 reveal">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="85">0</h3>
+                        <p><span data-i18n="stat_3">% Population Displaced</span> <span class="citation" data-tooltip="Source: UNRWA Displacement Tracker">3</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="locations" class="section-padding">
+        <div class="container">
+            <h2 class="section-title mb-5 reveal" data-i18n="evidence_title">Visual Evidence</h2>
+            <p class="article-text mb-5" data-i18n="evidence_subtitle">Click on a section below to read the full report.</p>
+            <div class="row g-4">
+                
+                <div class="col-md-6 reveal">
+                    <div class="story-card expandable-card">
+                        <div class="story-card-header">
+                            <div class="card-img-wrap">
+                                <img src="https://static01.nyt.com/images/2023/11/11/multimedia/11israel-ledeall-top-tbqp/11israel-ledeall-top-tbqp-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Medical Infrastructure">
+                            </div>
+                            <div class="card-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 data-i18n="card_1_title">Medical Infrastructure</h4>
+                                    <i class="bi bi-chevron-down toggle-icon"></i>
+                                </div>
+                                <p data-i18n="card_1_desc">An analysis of the collapse of the healthcare system.</p>
+                            </div>
+                        </div>
+                        <div class="story-details">
+                            <div class="details-content article-text">
+                                <p data-i18n="card_1_text">The systematic dismantling of Gaza's healthcare infrastructure has created a catastrophic situation for civilians. Hospitals, once sanctuaries, have become targets or collateral damage in ongoing bombardments. This has led to a critical shortage of operational medical facilities, severe lack of essential medicines, and an exhausted medical workforce working under impossible conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 reveal">
+                    <div class="story-card expandable-card">
+                        <div class="story-card-header">
+                            <div class="card-img-wrap">
+                                <img src="https://i.guim.co.uk/img/media/fd35b5d139f6bae937be9d887ae27a31d1166eb9/0_318_5760_3456/master/5760.jpg?width=1200&quality=85&auto=format&fit=max&s=a30bd6ffc555c4f4cc4bcd832348ca3d" alt="Heritage Destruction">
+                            </div>
+                            <div class="card-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 data-i18n="card_2_title">Cultural Heritage</h4>
+                                    <i class="bi bi-chevron-down toggle-icon"></i>
+                                </div>
+                                <p data-i18n="card_2_desc">Historical mosques, churches, and archives lost to bombardment.</p>
+                            </div>
+                        </div>
+                        <div class="story-details">
+                            <div class="details-content article-text">
+                                <p data-i18n="card_2_text">The erasure of cultural heritage in Gaza is an irreversible loss to human history. Ancient sites, centuries-old mosques, historical churches, and vital archives have been reduced to rubble. This destruction goes beyond physical structures; it is an assault on the collective memory and identity of all people.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="onelife" class="section-padding bg-darker">
+        <div class="container">
+            
+            <div id="lives-intro" class="row justify-content-center text-center reveal">
+                <div class="col-lg-8">
+                    <span class="overline" data-i18n="mem_overline">In Memoriam</span>
+                    <h2 class="section-title" style="border: none; padding: 0;" data-i18n="mem_title">The Silence Left Behind</h2>
+                    
+                    <p class="article-text mb-5" style="font-size: 1.4rem; color: #fff;" data-i18n="mem_intro">
+                        "Before you proceed, we ask you to pause. Behind the staggering statistics lie individual universes extinguished. These voices were unheard in their final hour, but their stories are carved here forever. We invite you not just to read, but to bear witness."
+                    </p>
+
+                    <button id="reveal-lives-btn" class="btn btn-outline-light action-btn" style="padding: 15px 40px; letter-spacing: 0.2em; text-transform: uppercase;" data-i18n="btn_witness">
+                        Bear Witness
+                    </button>
+                </div>
+            </div>
+
+            <div id="lives-content" class="d-none">
+                <div id="livesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+                    
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 offset-lg-1 mb-4 mb-lg-0">
+                                    <div class="portrait-frame">
+                                        <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-02/240202-hind-gaza-mb-1049-8e7f2f.jpg" alt="Portrait of Hind Rajab">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 ms-lg-5">
+                                    <span class="overline">One Life</span>
+                                    <h2 class="display-5 mb-4" style="font-family: var(--font-serif);" data-i18n="life_1_name">Hind Rajab, Age 6</h2>
+                                    <p class="article-text" data-i18n="life_1_text">
+                                        Trapped in a car with her family members in Gaza City, Hind’s voice was heard by the world in a desperate phone call to emergency dispatchers. She waited for hours for a rescue that never arrived.
+                                    </p>
+                                    <p class="article-text" data-i18n="life_1_note">
+                                        Her story became a global symbol of the terrifying isolation faced by children. It is centrally featured in the documentary film "The Night Won't End".
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 offset-lg-1 mb-4 mb-lg-0">
+                                    <div class="portrait-frame">
+                                        <img src="https://eaworldview.com/wp-content/uploads/2024/12/KHALED-NABHAN-1280x640.jpeg" alt="Reem, Soul of my Soul">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 ms-lg-5">
+                                    <span class="overline">One Life</span>
+                                    <h2 class="display-5 mb-4" style="font-family: var(--font-serif);" data-i18n="life_2_name">Reem, Age 3</h2>
+                                    <p class="article-text" data-i18n="life_2_text">
+                                        Known to the world as <em>"Ruh ar-ruh"</em> (Soul of my Soul), a phrase whispered by her grandfather Khaled Nabhan as he bid her farewell. She was killed in an airstrike on the Nuseirat refugee camp while sleeping.
+                                    </p>
+                                    <p class="article-text" data-i18n="life_2_note">
+                                        She is remembered for her laughter and the earring her grandfather tenderly adjusted one last time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 offset-lg-1 mb-4 mb-lg-0">
+                                    <div class="portrait-frame">
+                                        <img src="https://thisweekinpalestine.com/wp-content/uploads/2023/12/014-E4.png" alt="Lubna Alyaan playing violin">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 ms-lg-5">
+                                    <span class="overline">One Life</span>
+                                    <h2 class="display-5 mb-4" style="font-family: var(--font-serif);" data-i18n="life_3_name">Lubna Alyaan, Age 14</h2>
+                                    <p class="article-text" data-i18n="life_3_text">
+                                        A talented student at the Edward Said Conservatory of Music, Lubna dreamed of becoming a world-class violinist. She was killed alongside her family in Nuseirat.
+                                    </p>
+                                    <p class="article-text" data-i18n="life_3_note">
+                                        Her violin teacher remembers her as a dedicated soul who believed music could drown out the sound of war.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="lives-controls mt-4 ms-lg-5 ps-lg-5">
+                        <button class="btn btn-sm btn-outline-light me-2" type="button" data-bs-target="#livesCarousel" data-bs-slide="prev">
+                            <i class="bi bi-arrow-left"></i> Prev
+                        </button>
+                        <button class="btn btn-sm btn-outline-light" type="button" data-bs-target="#livesCarousel" data-bs-slide="next">
+                            Next <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center reveal">
+                    <h2 class="section-title" data-i18n="support_title">Humanitarian Aid</h2>
+                    <p class="article-text mb-5" data-i18n="support_text">
+                        Millions are without access to clean water, food, and medical supplies.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                         <a href="https://www.doctorswithoutborders.org/latest/our-response-israel-gaza-war" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg action-btn"><i class="bi bi-bandaid me-2"></i> <span data-i18n="btn_msf">Medical Aid (MSF)</span></a>
+                         <a href="https://www.wfp.org/emergencies/palestine-emergency" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg action-btn"><i class="bi bi-basket me-2"></i> <span data-i18n="btn_wfp">Food Relief (WFP)</span></a>
+                         <a href="https://www.unicef.org/emergencies/children-gaza-need-lifesaving-support" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg action-btn"><i class="bi bi-heart-fill me-2"></i> <span data-i18n="btn_unicef">Children's Fund (UNICEF)</span></a>
+                    </div>
+                    <p class="small mt-4" data-i18n="support_note">*Links direct to official verified donation pages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology" class="section-padding bg-darker">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="methodology-wrapper reveal">
+                        <h4 class="mb-4" data-i18n="meth_title">Sources & Methodology</h4>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <h6 data-i18n="meth_1_title">Data Verification</h6>
+                                <p class="small" data-i18n="meth_1_text">Statistics presented on this platform are aggregated from UN OCHA Situation Reports, World Health Organization (WHO) emergency updates, and UNICEF field reports from Oct 2023 to Jan 2024.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 data-i18n="meth_2_title">Satellite Imagery</h6>
+                                <p class="small" data-i18n="meth_2_text">Visual evidence of infrastructure damage is derived from open-source satellite data (Copernicus Sentinel-1/2) and independent geospatial analysis verified by third-party NGOs.</p>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <p class="small border-top pt-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                    <strong data-i18n="ethical_title">Ethical Note:</strong> <span data-i18n="ethical_text">This project aims to document the scale of loss. We have deliberately excluded graphic imagery to preserve the dignity of victims while strictly adhering to factual reporting standards.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="closing" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center reveal">
+                    <p class="display-6" style="font-family: var(--font-serif); color: var(--accent);" data-i18n="closing_quote">
+                        "There is no way to quantify the silence left behind."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-5">
+        <div class="container">
+            <p class="mb-0" data-i18n="footer_copy">© 2024 Digital Documentary Project.</p>
+            <p class="small" data-i18n="footer_note">Archived for educational and historical record.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
